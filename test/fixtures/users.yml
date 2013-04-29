@@ -3,3 +3,9 @@ robin:
   last_name: Charters
   email: red5@mac.com
   profile_name: robincharters
+
+katherine:
+  first_name: Katherine
+  last_name: Beer
+  email: katherinebeer@gmail.com
+  profile_name: katherinebeer
