@@ -5,16 +5,17 @@
 			<fieldset>
 		  		<legend>Sign In</legend>
 
-			  <%= f.input :email %>
-			  <%= f.input :password %>
+			  	<%= f.input :email, placeholder: 'user@domain.com' %>
+			  	<%= f.input :password, placeholder: '••••••••' %>
 
-			  <% if devise_mapping.rememberable? -%>
-			    <div><%= f.input :remember_me, as: :boolean %>
-			  <% end %>
+				<% if devise_mapping.rememberable? -%>  
+				    <%= f.input :remember_me, as: :boolean, inline_label: 'Yes, remember me' %>
+				<% end %>
 
-			  <div><%= f.button :submit, "Sign in" %></div>
+			  	<%= f.button :submit, "Sign in" %>
 
 			</fieldset>
+		
 		<% end %>
 
 		<%= render "devise/shared/links" %>
